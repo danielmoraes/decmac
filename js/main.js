@@ -65,7 +65,7 @@ function init() {
         $("#ratio").prop("disabled", false);
         $("#start").prop("disabled", false);
         $("#add-option").prop("disabled", false);
-        $("#stop").prop("disabled", true);
+        $("#cancel").prop("disabled", true);
         $('#countdown').countdown('destroy');
         $("#pie-chart").hide();
         $("#countdown").hide();
@@ -101,7 +101,7 @@ function init() {
         $("#ratio").prop("disabled", true);
         $("#start").prop("disabled", true);
         $("#add-option").prop("disabled", true);
-        $("#stop").prop("disabled", false);
+        $("#cancel").prop("disabled", false);
 
         for (i = 0; i < chart_data.length; i++) {
             $("#opt-" + i).prop("disabled", false);
@@ -113,11 +113,11 @@ function init() {
         $('#countdown').countdown({until: c_date, onExpiry: lift_off});
     });
 
-    $("#stop").button().click(function() {
+    $("#cancel").button().click(function() {
         destroy();
     });
 
-    $("#stop").prop("disabled", true);
+    $("#cancel").prop("disabled", true);
 
     pie_chart = new Highcharts.Chart({
         chart: {
@@ -138,7 +138,6 @@ function init() {
         },
         plotOptions: {
             pie: {
-                allowPointSelect: true,
                 cursor: 'pointer',
                 dataLabels: {
                     enabled: true,
