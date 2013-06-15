@@ -1,0 +1,114 @@
+body {
+    background-color: #FFF;
+    font-family: "Open Sans", serif;
+}
+
+label, input { display:block; }
+input { width: 95%; padding: .2em; border: 1px solid #AAA }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
+
+fieldset {
+    border: 0 !important;
+}
+
+button {
+    font-size: 13px !important;
+    padding: 1.5px 10px 1.5px 10px;
+}
+
+#option-list button {
+    margin: 0 5px 0 5px;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 0 !important;
+}
+
+label {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: 'Roboto', 'Arial', serif;
+}
+
+.ui-dialog {
+    font-size: 13px !important;
+}
+
+.ui-widget-header {
+    border: 0 !important;
+    background: transparent !important;
+}
+
+.ui-dialog-titlebar-close {
+    width: 22px !important;
+}
+
+#header {
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Roboto', 'Arial', serif;
+}
+
+#header h1 {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#option-list {
+    text-align: center;
+    width: 100%;
+}
+
+#countdown {
+    width: 240px;
+    height: 45px;
+    left: 50%;
+    margin-left: -120px;
+    position: relative;
+    display: none;
+    margin-bottom: 10px;
+    background-color: #EDEDED;
+    border: 0;
+    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+}
+
+#pie-chart {
+    display: none;
+    width: 800px;
+}
+
+.left-settings {
+    float: left;
+}
+
+.right-settings {
+    float: right;
+}
+
+#pie {
+    margin-top: 10px;
+}
+
+#main-wrapper {
+    width: 800px;
+    min-height: 95px;
+    margin: auto;
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+
+#dialog-form {
+    height: auto !important;
+}
+
+input[type="text"]:disabled {
+    color : darkGray;
+    font-style: italic;
+}

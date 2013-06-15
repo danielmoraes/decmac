@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>DecMac - The Decision Machine</title>
+        <link rel="stylesheet" type="text/css"
+        href="http://blog.dmoraes.org/wp-content/themes/mog/roboto.css" />
+        <script type="text/javascript" src="js/init.js" charset="UTF-8">
+        </script>
+    </head>
+    <body>
+        <div id="header"><h1>DecMac - The Decision Machine</h1></div>
+        <div id="main-wrapper">
+            <div id="toolbar" class="ui-widget-header ui-corner-all">
+                <div class="left-settings">
+                    <label for="time-limit">Time (m):</label>
+                    <input id="time-limit" type="text"
+                    style="width: 50px; float: left; margin-right: 15px;"
+                    value="5" name="time-limit"
+                    />
+                    <label for="min-sel">Min. votes:</label>
+                    <input id="min-sel" type="text"
+                    style="width: 50px; float: left; margin-right: 15px;"
+                    value="10" name="min-sel"
+                    />
+                    <label for="ratio">Confidence threshold:</label>
+                    <input id="ratio" type="text"
+                    style="width: 50px; float: left; margin-right: 15px;"
+                    value="80" name="ratio"
+                    />
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                </div>
+                <div class="right-settings">
+                    <button id="add-option">Add new option</button>
+                </div>
+            </div>
+            <br style="clear: both">
+            <hr>
+            <div id="countdown"></div>
+            <div id="option-list"></div>
+            <div id="pie">
+                <div id="pie-chart" style="min-width: 400px; height: 400px; margin: 0 auto"></div>
+            </div>
+        </div>
+    </body>
+</html>
