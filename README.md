@@ -1,4 +1,3 @@
-decmac
+DecMac
 ======
-
-DecMac - The Decision Machine
+A decision machine to decide better and faster

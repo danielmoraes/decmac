@@ -1,4 +1,4 @@
-var app_name = 'decmac';
+var app_name = 'stuff/decmac';
 var app_url = window.location.protocol + '//' + window.location.host + '/' +
               app_name + '/';
 
@@ -9,6 +9,7 @@ if (window.location.host == "localhost" ||
 }
 
 var css_files = [
+    app_url + 'css/roboto.css',
     app_url + 'css/main.css',
     app_url + 'libs/jquery.countdown/jquery.countdown.css'
 ];
