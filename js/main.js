@@ -36,10 +36,12 @@ function init() {
                 pie_chart.series[0].setData(chart_data);
                 total_votes++;
                 max_confidence = 0;
+                max_confidence_id = 0;
                 for (i = 0; i < chart_data.length; i++) {
-                    confidence = Math.round(100*(chart_data[i][1]/total_votes));
+                    confidence = (100*(chart_data[i][1]/total_votes)).toFixed(2);
                     if (confidence > max_confidence) {
                         max_confidence = confidence;
+                        max_confidence_id = i;
                     }
                 }
                 if (total_votes == 1) {
@@ -48,7 +50,7 @@ function init() {
                 if (max_confidence >= $("#ratio").val() &&
                     total_votes >= $("#min-sel").val()) {
                     alert("Confidence reached! The most reliable decision is: " +
-                        chart_data[opt_id][0] + " (Confidence: " + max_confidence + "%)");
+                        chart_data[max_confidence_id][0] + " (Confidence: " + max_confidence + "%)");
                     destroy();
                 }
             });

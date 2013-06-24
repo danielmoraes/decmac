@@ -1,4 +1,4 @@
-var app_name = 'stuff/decmac';
+var app_name = 'projects/decmac';
 var app_url = window.location.protocol + '//' + window.location.host + '/' +
               app_name + '/';
 
