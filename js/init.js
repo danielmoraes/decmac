@@ -1,6 +1,4 @@
-var app_name = 'projects/decmac';
-var app_url = window.location.protocol + '//' + window.location.host + '/' +
-              app_name + '/';
+var app_url = window.location.protocol + '//' + window.location.host + '/';
 
 var debug_mode = false;
 if (window.location.host == "localhost" ||
